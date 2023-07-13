@@ -1,0 +1,36 @@
+{
+  "name": "github-actions-playground",
+  "version": "1.0.0",
+  "description": "Explore and experiment with GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fire-cracker/github-actions-playground.git"
+  },
+  "keywords": [
+    "github-actions",
+    "release"
+  ],
+  "author": "d_firecracker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fire-cracker/github-actions-playground/issues"
+  },
+  "homepage": "https://github.com/fire-cracker/github-actions-playground#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3"
+  }
+}

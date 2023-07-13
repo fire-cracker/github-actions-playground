@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "version": "2.1.1",
+  "short_name": "Flow",
+  "name": "github-actions-playground",
+  "description": "Explore and experiment with GitHub Actions",
+  "homepage_url": "https://github.com/fire-cracker/github-actions-playground"
+}
