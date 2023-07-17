@@ -16,10 +16,6 @@ jobs:
           release-type: node
           package-name: github-actions-playground
           extra-files: |
-            [
-              {
-                "type": "json",
-                "path": "public/manifest.json",
-                "jsonpath": "$.version"
-              }
-            ]
+            - type: json
+              path: public/manifest.json
+              jsonpath: $.version
