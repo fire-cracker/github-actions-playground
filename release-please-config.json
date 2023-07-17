@@ -1,0 +1,17 @@
+{
+    "packages": {
+        ".": {
+            "package-name": "github-actions-playground",
+            "changelog-path": "CHANGELOG.md",
+            "release-type": "node",
+            "bump-minor-pre-major": true,
+            "extra-files": [
+                {
+                    "type": "json",
+                    "path": "public/manifest.json",
+                    "jsonpath": "$.version"
+                  }
+            ]
+        }
+    }
+}

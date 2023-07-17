@@ -10,16 +10,14 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
       - name: Create Release
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: github-actions-playground
-          extra-files: |
-            [
-              {
-                "type": "json",
-                "path": "public/manifest.json",
-                "jsonpath": "$.version"
-              }
-            ]
+          command: release-pr
+          config-file: release-please-config.json
